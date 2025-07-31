@@ -38,6 +38,7 @@ export interface Job {
 export interface JobFilters {
   experienceLevel: string;
   company: string;
+  industry: string;
   internship: boolean;
   onsite: boolean;
   hybrid: boolean;

@@ -1,6 +1,7 @@
 export const EXPERIENCE_LEVELS = [
-  "Entry Level",
-  "Mid Level",
-  "Senior Level",
-  "Executive",
+  "2+ yrs exp",
+  "3+ yrs exp",
+  "4+ yrs exp",
+  "5+ yrs exp",
+  "6+ yrs exp",
 ] as const;

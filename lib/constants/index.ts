@@ -14,12 +14,6 @@ export const WORK_ARRANGEMENTS = ["Remote", "Hybrid", "From Office"] as const;
 
 export const FILTER_OPTIONS: FilterOption[] = [
   {
-    label: "Recommended",
-    icon: "ri-star-line",
-    key: "recommended",
-    options: ["All Jobs", "Recommended", "Trending", "Latest"],
-  },
-  {
     label: "Experience level",
     icon: "ri-bar-chart-line",
     key: "experienceLevel",
@@ -32,9 +26,27 @@ export const FILTER_OPTIONS: FilterOption[] = [
     options: Array.from(COMPANIES),
   },
   {
+    label: "Industry",
+    icon: "ri-briefcase-line",
+    key: "industry",
+    options: Array.from(INDUSTRIES),
+  },
+  {
     label: "Internship",
     icon: "ri-graduation-cap-line",
     key: "internship",
+    toggle: true,
+  },
+  {
+    label: "Remote",
+    icon: "ri-home-wifi-line",
+    key: "remote",
+    toggle: true,
+  },
+  {
+    label: "Hybrid",
+    icon: "ri-building-2-line",
+    key: "hybrid",
     toggle: true,
   },
   {
@@ -42,12 +54,6 @@ export const FILTER_OPTIONS: FilterOption[] = [
     icon: "ri-map-pin-line",
     key: "onsite",
     toggle: true,
-  },
-  {
-    label: "Industry",
-    icon: "ri-briefcase-line",
-    key: "industry",
-    options: Array.from(INDUSTRIES),
   },
 ];
 

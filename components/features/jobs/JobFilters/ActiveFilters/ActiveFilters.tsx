@@ -33,6 +33,9 @@ const ActiveFilters: React.FC<ActiveFiltersProps> = ({
           case "company":
             label = "Company";
             break;
+          case "industry":
+            label = "Industry";
+            break;
           case "internship":
             label = "Internship";
             displayValue = true;

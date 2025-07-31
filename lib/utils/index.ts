@@ -115,6 +115,18 @@ export function filterJobs(
     );
   }
 
+  // Industry filter
+  if (filters.industry) {
+    filteredJobs = filteredJobs.filter(
+      (job) =>
+        job.skills.some((skill) =>
+          skill.toLowerCase().includes(filters.industry.toLowerCase())
+        ) ||
+        job.title.toLowerCase().includes(filters.industry.toLowerCase()) ||
+        job.description.toLowerCase().includes(filters.industry.toLowerCase())
+    );
+  }
+
   // Internship filter
   if (filters.internship) {
     filteredJobs = filteredJobs.filter((job) =>

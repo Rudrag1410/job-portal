@@ -26,6 +26,7 @@ interface UseJobFiltersReturn {
 const initialFilters: JobFilters = {
   experienceLevel: "",
   company: "",
+  industry: "",
   internship: false,
   onsite: false,
   hybrid: false,
