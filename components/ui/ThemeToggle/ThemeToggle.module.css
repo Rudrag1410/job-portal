@@ -1,0 +1,15 @@
+.themeToggle {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.themeToggle:hover {
+  background-color: var(--color-hover);
+  transform: scale(1.05);
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.1rem;
+}

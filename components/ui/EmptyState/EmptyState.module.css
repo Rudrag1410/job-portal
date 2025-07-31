@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.iconWrapper {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 3rem;
+  color: var(--color-muted-foreground);
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.message {
+  margin: 0 0 1.5rem 0;
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+  max-width: 24rem;
+  line-height: 1.5;
+}
+
+.action {
+  margin-top: 0.5rem;
+}

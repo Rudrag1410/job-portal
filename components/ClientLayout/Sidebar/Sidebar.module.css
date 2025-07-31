@@ -1,0 +1,245 @@
+.sidebar {
+  width: 16rem;
+  height: 100vh;
+  background: var(--color-card);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  overflow-y: auto;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.logoIcon {
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-primary);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-foreground);
+  font-size: 1.25rem;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  font-family: var(--font-pacifico);
+}
+
+.navigation {
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin: 0.125rem 0.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.menuItem:hover {
+  background: var(--color-hover);
+  color: var(--color-text);
+}
+
+.menuItem.active {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.menuIcon {
+  font-size: 1.125rem;
+  flex-shrink: 0;
+}
+
+.menuLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.menuBadge {
+  margin-left: auto;
+}
+
+.activeIndicator {
+  position: absolute;
+  right: 0.75rem;
+  font-size: 1rem;
+}
+
+.upgradeSection {
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  background-color: var(--color-muted);
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.upgradeTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.upgradeIcon {
+  font-size: 1rem;
+  color: var(--color-warning);
+}
+
+.upgradeButton {
+  width: 100%;
+}
+
+.bottomSection {
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.bottomMenuItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin: 0.125rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: var(--color-muted-foreground);
+}
+
+.bottomMenuItem:hover {
+  background-color: var(--color-muted);
+  color: var(--color-text);
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  background-color: var(--color-muted);
+}
+
+.profileSection:hover {
+  background-color: var(--color-accent);
+}
+
+.profileAvatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 2px solid var(--color-border);
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.profileName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.125rem;
+}
+
+.profileTitle {
+  font-size: 0.75rem;
+  color: var(--color-muted-foreground);
+}
+
+.signOutButton {
+  margin: 0.5rem;
+  justify-content: flex-start;
+  color: var(--color-muted-foreground);
+}
+
+.signOutButton:hover {
+  background-color: var(--color-muted);
+  color: var(--color-text);
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 280px;
+    z-index: 50;
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--color-card);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid var(--color-border);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .logoSection {
+    padding: var(--space-4) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-primary);
+  }
+
+  .logoText {
+    color: var(--color-primary-foreground);
+  }
+
+  .logoIcon {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--color-primary-foreground);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sidebar {
+    width: 14rem;
+  }
+
+  .logoSection {
+    padding: var(--space-3) var(--space-3);
+  }
+
+  .menuItem {
+    padding: var(--space-2) var(--space-3);
+    margin: 0.1rem var(--space-2);
+  }
+
+  .profileSection {
+    margin: var(--space-2);
+    padding: var(--space-3);
+  }
+}

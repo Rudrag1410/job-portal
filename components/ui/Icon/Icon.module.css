@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  line-height: 1;
+  color: currentColor;
+  font-family: "remixicon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sm {
+  font-size: 0.875rem;
+}
+
+.md {
+  font-size: 1rem;
+}
+
+.lg {
+  font-size: 1.25rem;
+}
+
+.xl {
+  font-size: 1.5rem;
+}
