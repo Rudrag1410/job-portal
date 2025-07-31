@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({
     <div className={styles.header}>
       <div className={styles.leftSection}>
         <h3 className={styles.title}>
-          {pathname === "/profile" ? "Profile" : "Menu"}
+          {pathname === "/profile" ? "Profile" : APP_NAME}
         </h3>
         <div className={styles.breadcrumb}>
           <Icon name="ri-briefcase-line" className={styles.breadcrumbIcon} />
