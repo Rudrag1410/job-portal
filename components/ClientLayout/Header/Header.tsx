@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Button, Icon, ThemeToggle } from "@/components/ui";
 import { ActiveTab } from "@/lib/types";
 import styles from "./Header.module.css";
+import { APP_NAME } from "@/lib";
 
 interface HeaderProps {
   activeTab: ActiveTab;
